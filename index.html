@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/switch.js"></script>
+    <title>Formulário</title>
+</head>
+<img src="img/sol.png" class="sol">
+<img src="img/lua.png" class="lua">
+<label class="switch">
+    <input type="checkbox" onclick="toggleColors()">
+    <span class="slider"></span>
+</label>
+<body>
+    <div class="container">
+        <div class="titulo" id="titulo">
+            <h1> Estoque de Bebidas </h1>
+        </div>
+        <form method="post" action="bd/envio.php" id="contato" autocomplete="off">
+            <fieldset>
+
+                <legend>Formulário</legend>
+                <div class="form-group row">
+                    <div class="form-group col-md-4">
+                        <label class="form-label" for="txtCod_Bebida"> Código Bebida: </label>
+                        <input class="form-control" type="int" id="txtCod_Bebida" name="txtCod_Bebida" maxlength="50"
+                            placeholder="000" required />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label class="form-label" for="txtQuant"> Quantidade: </label>
+                        <input class="form-control" type="int" id="txtQuant" name="txtQuant" maxlength="14"
+                            placeholder="000" required />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="form-group col-md-4">
+                        <label class="form-label" for="txtCompra"> Compra:</label>
+                        <input class="form-control" type="decimal" id="txtCompra" name="txtCompra" max="2020-12-31"
+                            min="1900-01-01" placeholder="R$000.00" required />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label class="form-label" for="txtVenda"> Venda: </label>
+                        <input class="form-control" type="decimal" id="txtVenda" name="txtVenda" placeholder="R$000.00"
+                            required />
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button class="btn btn-primary" type="submit" name="btnEnviar">Enviar</button>
+                    <button class="btn btn-secondary" type="reset" name="btnLimpar">Limpar</button>
+                </div>
+                <br>
+            </fieldset>
+        </form>
+        <form method="post" action="bd/envio.php" id="pesquisa" autocomplete="off">
+            <fieldset>
+                <legend>Pesquisa de Bebidas</legend>
+                <br>
+                <div>
+                    <span class="row row-cols-lg-auto g-3">
+                        <label class="col-sm-2 col-form-label" for="txtNomeBebida">Nome:</label>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" id="txtNomeBebida" name="txtNomeBebida"
+                                placeholder="Nome da bebida..." />
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-secondary" type="submit" name="btnListar">Listar</button>
+                        </div>
+                    </span>
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <form method="post" action="bd/envio.php" id="pesquisa" autocomplete="off">
+            <fieldset>
+                <legend>Pesquisa Total de Bebidas </legend>
+                <br>
+                <div>
+                    <span class="row row-cols-lg-auto g-3">
+                        <label class="col-sm-2 col-form-label" for="txtTBebidas">Código: </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" id="txtTBebidas" name="txtTBebidas"
+                                placeholder="Código da bebida..." />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <button class="btn btn-secondary" type="submit" name="btnTListar">Listar</button>
+                        </div>
+                    </span>
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <form method="post" action="bd/envio.php" id="Venda" autocomplete="off">
+            <fieldset>
+                <legend>Venda de Bebidas </legend>
+                <br>
+                <div>
+                <span class="row row-cols-lg-auto g-3 align-items-center">
+                    <label class="col-sm-2 col-form-label" for="txtVendaBebida">Código Bebida:</label>
+                    <div class="col-sm-4">
+                    <input class="form-control" type="number" id="txtVendaBebida" name="txtVendaBebida" />
+                    </div>
+                
+                    <label class="col-sm-3 col-form-label" for="txtQuantidade">Quantidade:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control" type="number" id="txtQuantidade" name="txtQuantidade" />
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <button class="btn btn-secondary" type="submit" name="btnVenda">Vender</button>
+                    </div>
+                </span>
+                </div>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

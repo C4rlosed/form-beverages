@@ -1,0 +1,128 @@
+body{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: century gothic;
+    color: black;
+}
+.lua{
+  display: none;
+}
+.sol{
+  display: flex;
+  position: absolute;
+  top: 0.5rem;
+  margin-left: 80%;
+}
+.container{
+    position: relative;
+    box-shadow: 5px 5px 50px #a0a0a0;
+    -webkit-box-shadow: 20px 20px 50px #a0a0a0;
+    -moz-box-shadow: 5px 50px 50px #a0a0a0;
+    top: 10%;
+    width: 60%;
+    background-color: #dfdfdf;
+    padding: 4%;
+    margin: 1%;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    padding-top: 1rem;
+    box-shadow: 5px 5px 5px #bebebe;
+    -webkit-box-shadow: 10px 10px 20px #bebebe;
+    -moz-box-shadow: 5px 5px 5px #bebebe;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    height: 5rem;
+    margin-bottom: 2%;
+    color: black
+}
+
+.switch {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 34px;
+  top: 5%;
+  margin-left: 80%;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(255, 255, 255);
+  
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.cor2
+{
+    background-color: #353535;
+}
+.cor2 > .container
+{
+    background-color: #808080;
+    color: #FAFAFA;
+    box-shadow: 5px 5px 50px #1c1c1c;
+    -webkit-box-shadow: 20px 20px 50px #1c1c1c;
+    -moz-box-shadow: 5px 50px 50px #1c1c1c;
+}
+.cor2 h1{
+    background-color: #d2d2d2;
+    box-shadow: 5px 5px 20px #606060;
+    -webkit-box-shadow: 10px 10px 20px #606060;
+    -moz-box-shadow: 5px 5px 5px #606060;
+}
+.cor2 > .sol{
+  display: none;
+}
+.cor2 > .lua{
+  display: flex;
+  position: absolute;
+  height: 31px;
+  width: 31px;
+  top: 0.5rem;
+  margin-left: 80%;
+}
+
+
+

@@ -17,12 +17,11 @@ body{
 }
 .container{
     position: relative;
-    box-shadow: 5px 5px 50px #a0a0a0;
-    -webkit-box-shadow: 20px 20px 50px #a0a0a0;
-    -moz-box-shadow: 5px 50px 50px #a0a0a0;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  31px 31px 62px #bebebe, -31px -31px 62px #ffffff;
     top: 10%;
     width: 60%;
-    background-color: #dfdfdf;
+    background-color: #e0e0e0;
     padding: 4%;
     margin: 1%;
     border-radius: 10px;
@@ -30,14 +29,18 @@ body{
 h1 {
     text-align: center;
     padding-top: 1rem;
-    box-shadow: 5px 5px 5px #bebebe;
-    -webkit-box-shadow: 10px 10px 20px #bebebe;
-    -moz-box-shadow: 5px 5px 5px #bebebe;
+    background: linear-gradient(145deg, #e1e1e1, #ffffff);
+    box-shadow:  18px 18px 36px #d5d5d5,-18px -18px 36px #ffffff;
     background-color: #FAFAFA;
     border-radius: 10px;
     height: 5rem;
     margin-bottom: 2%;
     color: black
+}
+#txtCod_Bebida, #txtQuant, #txtCompra, #txtVenda, 
+#txtNomeBebida, #txtTBebidas, #txtVendaBebida, #txtQuantidade{
+  background-color: #fafafa;
+box-shadow:  5px 5px 18px #bebebe,-5px -5px 18px #ffffff;
 }
 
 .switch {
@@ -102,15 +105,15 @@ input:checked + .slider:before {
 {
     background-color: #808080;
     color: #FAFAFA;
-    box-shadow: 5px 5px 50px #1c1c1c;
-    -webkit-box-shadow: 20px 20px 50px #1c1c1c;
-    -moz-box-shadow: 5px 50px 50px #1c1c1c;
+    background: linear-gradient(145deg, #808080, #808080);
+    box-shadow:  31px 31px 62px #333333,
+                -31px -31px 62px #5f5f5f;
 }
 .cor2 h1{
-    background-color: #d2d2d2;
-    box-shadow: 5px 5px 20px #606060;
-    -webkit-box-shadow: 10px 10px 20px #606060;
-    -moz-box-shadow: 5px 5px 5px #606060;
+    background-color: #dddddd;
+    background: linear-gradient(145deg, #e1e1e1, #bdbdbd);
+    box-shadow:  31px 31px 62px #818181,
+             -31px -31px 62px #a3a3a3;
 }
 .cor2 > .sol{
   display: none;
@@ -122,6 +125,46 @@ input:checked + .slider:before {
   width: 31px;
   top: 0.5rem;
   margin-left: 80%;
+}
+.cor2 #txtCod_Bebida{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtQuant{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtCompra{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtVenda{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtNomeBebida{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtTBebidas{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtVendaBebida{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
+}
+.cor2 #txtQuantidade{
+  background-color: #d6d6d6;
+box-shadow:  5px 5px 18px #8f8f8f,
+             -5px -5px 18px #aaaaaa;
 }
 
 

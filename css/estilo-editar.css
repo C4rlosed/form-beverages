@@ -1,0 +1,63 @@
+body{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: century gothic;
+    color: black;
+}
+.container-editar{
+    position: center;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  31px 31px 62px #bebebe, -31px -31px 62px #ffffff;
+    margin-top: 1.5rem;
+    width: 45%;
+    height: 35%;
+    background-color: #dfdfdf;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 5%;
+    border-radius: 10px;
+}
+.container-tabela{
+    position: center;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  31px 31px 62px #bebebe, -31px -31px 62px #ffffff;
+    width: auto;
+    height: auto;
+    background-color: #dfdfdf;
+    padding: 2%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+#titulo{
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+#lista{
+    font-weight: bold;
+    font-size: auto;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.table{
+    color: black;
+}
+.espacamento-botoes {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#editar-btnvoltar{
+    margin-left: 40%;
+}
+#lista-btnvoltar{
+    margin-left: 91%;
+    margin-top: 5%;
+}

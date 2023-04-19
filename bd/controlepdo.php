@@ -95,16 +95,18 @@ class Conexao{
                 ?>
                 
                 <!-- Atribuir o código e nome ao link -->
-                <td><a href="formeditar.php?txtCodEstoque=<?=$linhas[$i]['ECodigo']?>">Editar</a></td>
+                <td>
+                    <form method="get" action="formeditar.php">
+                        <input type="hidden" name="txtCodEstoque" value="<?= $linhas[$i]['ECodigo'] ?>">
+                        <button type="submit" class="btn btn-secondary">Editar</button>
+                    </form>
+                </td>
+
                 <?php
                 echo "</tr>";
             }
             require_once ("tabelarodape.php");
             require_once ("htmlrodape.php");
-            ?>
-            <!DOCTYPE html>
-            <a href="../index.html">Voltar</a >
-            <?php
         }     
     }
     public function SelecionarTRegistros(){
@@ -144,10 +146,6 @@ class Conexao{
             }
             require_once ("tabelarodape.php");
             require_once ("htmlrodape.php");
-            ?>
-            <!DOCTYPE html>
-            <a href="../index.html">Voltar</a >
-            <?php
         }     
     }
     
@@ -179,11 +177,7 @@ class Conexao{
             //Verifica se house inserção de registros no Banco de Dados
             if ($update->execute()){
                 //Se um registro foi inserido.
-                echo "<p>Registro alterado com Sucesso</p>";
-                ?>
-                <!DOCTYPE html>
-                <a href="../index.html">Voltar</a>
-                <?php
+                
             }
             else{
                 //Se nenhum registro foi inserido.
@@ -214,7 +208,7 @@ class Conexao{
             //Verifica se house inserção de registros no Banco de Dados
             if ($insert->execute()){
                 //Se um registro foi inserido.
-                echo "<p>Registro inserido com Sucesso</p>";
+                
             }
             else{
                 //Se nenhum registro foi inserido.
@@ -245,7 +239,7 @@ class Conexao{
             //Verifica se house inserção de registros no Banco de Dados
             if ($update->execute()){
                 //Se um registro foi inserido.
-                echo "<p>Quantidade atualizada com Sucesso!</p>";
+                
             }
             else{
                 //Se nenhum registro foi inserido.
@@ -281,9 +275,8 @@ class Conexao{
 
                 echo "</tr>";
             }
-            echo "</tbody>";
-            echo "</table>";
-            require('./htmlrodape.php');
+            require_once ("tabelarodape.php");
+            require_once ("htmlrodape.php");
          
         }     
     }
@@ -294,12 +287,6 @@ class Conexao{
         $query = "DELETE FROM tb_venda WHERE VeBeCodigo = :codbebida";
         $select = $this->pdo->prepare($query);
         $select->bindParam(':codbebida', $codbebida);
-
-        ?>
-        <!DOCTYPE html>
-        <a href="../index.html">Voltar</a>
-        <?php
-        
         //Executa a query e retorna os registros do banco
         $select->execute();
         $linhas = $select->fetchAll(PDO::FETCH_ASSOC);

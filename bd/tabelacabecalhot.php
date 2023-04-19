@@ -1,6 +1,6 @@
 <div>
-<table>
-    <caption>Lista Total de Bebidas</caption>
+<h1 id="titulo">Lista Total de Bebidas</h1>
+<table class="table">
     <thead>
         <tr>
             <th>Código Bebida </th>
@@ -9,3 +9,4 @@
         </tr>
     </thead>
     <tbody>
+        
